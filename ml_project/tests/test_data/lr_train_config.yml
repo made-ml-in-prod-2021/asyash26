@@ -1,0 +1,33 @@
+input_data_path: "test_data/heart.csv"
+output_model_path: "results/lr_model.pkl"
+metrics_path: "results/lr_metrics.json"
+preds_path: "results/lr_preds.csv"
+split_params:
+  val_size: 0.2
+  random_state: 42
+preprocess_params:
+  drop_nan: True
+  drop_duplicates: False
+train_params:
+  model_type: "LogisticRegression"
+  solver: "saga"
+  penalty: "l1"
+  max_iter: 10000
+  tol: 0.0001
+features_params:
+  categorical_features:
+    - "sex"
+    - "cp"
+    - "restecg"
+    - "exang"
+    - "slope"
+    - "ca"
+    - "thal"
+    - "fbs"
+  numerical_features:
+    - "age"
+    - "trestbps"
+    - "chol"
+    - "thalach"
+    - "oldpeak"
+  target_col: "target"
