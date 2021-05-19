@@ -62,9 +62,9 @@ def test_with_several_correct_input_samples(client, correct_columns, correct_val
 
 def test_incorrect_columns(client, incorrect_columns, correct_values_sample):
     response = make_request(client, incorrect_columns, correct_values_sample)
-    assert response.status_code == 404
+    assert response.status_code == 400
 
 
 def test_incorrect_values(client, correct_columns, incorrect_values_sample):
     response = make_request(client, correct_columns, incorrect_values_sample)
-    assert response.status_code == 404
+    assert response.status_code == 400
