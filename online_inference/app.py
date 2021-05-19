@@ -31,7 +31,7 @@ def predict(request: InputData):
     data = request.convert_to_pandas()
     if not validate_input_data(data):
         raise HTTPException(
-            status_code=404,
+            status_code=400,
             detail="Incorrect input data"
         )
     prediction = model.predict(data)
