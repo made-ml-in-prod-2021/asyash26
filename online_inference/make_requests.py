@@ -5,7 +5,7 @@ import click
 import pandas as pd
 import requests
 
-HOST = os.environ.get("HOST", default="localhost")
+HOST = os.environ.get("HOST", default="0.0.0.0")
 PORT = os.environ.get("PORT", default=8000)
 
 
