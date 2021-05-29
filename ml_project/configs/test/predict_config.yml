@@ -1,0 +1,4 @@
+input_data_path: "../data/raw/heart.csv"
+pipline_path: "results/lr_model.pkl"
+preds_path: "results/lr_preds.csv"
+target_col: "target"
