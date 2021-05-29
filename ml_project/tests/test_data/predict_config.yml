@@ -1,4 +1,0 @@
-input_data_path: "test_data/heart.csv"
-pipline_path: "test_data/lr_model.pkl"
-preds_path: "results/preds.csv"
-target_col: "target"
