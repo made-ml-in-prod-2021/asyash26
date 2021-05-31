@@ -1,0 +1,19 @@
+input_data_path: "../data/raw/heart.csv"
+output_data_path: "../data/generation/gen_data.csv"
+categorical_features:
+  - "sex"
+  - "cp"
+  - "restecg"
+  - "exang"
+  - "slope"
+  - "ca"
+  - "thal"
+  - "fbs"
+  - "target"
+numerical_features:
+  - "age"
+  - "trestbps"
+  - "chol"
+  - "thalach"
+  - "oldpeak"
+size: 100

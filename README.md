@@ -1,1 +1,2 @@
-# asyash26 for ML in Production
+# ML in production HW №1
+### student: Shevchuk Anastasiia
